@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Password Validation</title>
+</head>
+
+<body>
+	<h1>Password Validation Example</h1>
+
+	<label for="password">Password: </label>
+	<input type="password" id="password">
+	<button onclick="checkPassword()">Submit</button>
+
+	<script>
+		function checkPassword() {
+			// 获取密码输入框中的值
+			var password = document.getElementById("password").value;
+
+			// 判断密码是否正确，这里假设特定的密码为 "123456"
+			if (password === "IXZgig") {
+				// 如果密码正确，将浏览器重定向到指定URL
+				window.location.href = "./ouywc";
+
+
+			} else {
+				// 如果密码错误，弹出提示框
+				alert("Invalid password!");
+			}
+		}
+	</script>
+</body>
+
+</html>
